@@ -1,10 +1,8 @@
 import random
 
-# ----- constants from notes -----
 CHROM_LENGTH = 5
 CROSS_RATE = 0.8
 MUT_RATE = 0.1
-# --------------------------------
 
 def fitness(x):
     return x ** 2
@@ -80,5 +78,4 @@ def genetic_algorithm():
     print("\nFinal best solution:", decoded[best_idx],
           "fitness =", fitnesses[best_idx])
 
-# run
 genetic_algorithm()
